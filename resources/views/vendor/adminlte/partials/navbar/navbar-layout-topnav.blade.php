@@ -3,7 +3,6 @@
     {{ config('adminlte.classes_topnav', 'navbar-white navbar-light') }}">
 
     <div class="{{ config('adminlte.classes_topnav_container', 'container') }}">
-
         {{-- Navbar brand logo --}}
         @if(config('adminlte.logo_img_xl'))
             @include('adminlte::partials.common.brand-logo-xl')

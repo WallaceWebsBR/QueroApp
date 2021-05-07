@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CadastrosController;
 use App\Http\Controllers\GerenciamentosController;
+use App\Http\Controllers\FinanceiroController;
+use App\Http\Controllers\MarketingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +20,7 @@ use App\Http\Controllers\GerenciamentosController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth/login');
 });
 
 Auth::routes();
@@ -41,3 +43,12 @@ Route::get('/gerenciamento_lojas', [GerenciamentosController::class, 'lojas'])->
 Route::get('/gerenciamento_categorias', [GerenciamentosController::class, 'categorias'])->middleware('auth');
 Route::get('/gerenciamento_produtos', [GerenciamentosController::class, 'produtos'])->middleware('auth');
 Route::get('/gerenciamento_usuarios', [GerenciamentosController::class, 'usuarios'])->middleware('auth');
+
+////
+// Financeiro CONTROLLERS
+Route::get('/financeiro_cidades', [FinanceiroController::class, 'cidades'])->middleware('auth');
+Route::get('/financeiro_lojas', [FinanceiroController::class, 'lojas'])->middleware('auth');
+
+////
+// Maketing CONTROLLERS
+Route::get('/marketing_push', [MarketingController::class, 'pushs'])->middleware('auth');

@@ -74,7 +74,7 @@
     <div class="col-md-8">
     <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Vendas por Lojas</h3>
+                <h2 class="card-title" style="font-size:20px;">Vendas <b>por Lojas</b></h2>
 
                 <div class="card-tools">
                   <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -94,12 +94,12 @@
                   <!-- /.col -->
                   <div class="col-md-3">
                     <ul class="chart-legend clearfix">
-                      <li><i class="far fa-circle text-danger"></i> Chrome</li>
-                      <li><i class="far fa-circle text-success"></i> IE</li>
-                      <li><i class="far fa-circle text-warning"></i> FireFox</li>
-                      <li><i class="far fa-circle text-info"></i> Safari</li>
-                      <li><i class="far fa-circle text-primary"></i> Opera</li>
-                      <li><i class="far fa-circle text-secondary"></i> Navigator</li>
+                      <li><i class="far fa-circle text-danger"></i> Carazinho</li>
+                      <li><i class="far fa-circle text-success"></i> Sarandi</li>
+                      <li><i class="far fa-circle text-warning"></i> Erechin</li>
+                      <li><i class="far fa-circle text-info"></i> Ijuí</li>
+                      <li><i class="far fa-circle text-primary"></i> Panambi</li>
+                      <li><i class="far fa-circle text-secondary"></i> Soledade</li>
                     </ul>
                   </div>
                   <!-- /.col -->
@@ -147,6 +147,51 @@
     </div>
   </div>
 </div>
+
+
+<div class="row" style="margin-top: 50px;">
+  <div class="column" style="background-color:white; height: 300px; width: 1380px; margin-top:-20px;">
+    <h2 style="font-size:20px;">ULTIMAS <b>OFERTAS VENDIDAS</b></h2>
+    <table  class="table table-bordered table-striped dataTable">
+  <thead>
+    <tr>
+      <th scope="col">ID DO PEDIDO</th>
+      <th scope="col">OFERTA</th>
+      <th scope="col">LOJA</th>
+      <th scope="col">STATUS</th>
+      <th scope="col">VALOR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">#1445</th>
+      <td>TENIS NIKE</td>
+      <td>LOJA DO POVO</td>
+      <td style="color:green;">CONCLUIDO</td>
+      <td>198.78</td>
+      <td><a style="color:red;" href="#">VER PEDIDO</a></td>
+    </tr>
+    <tr>
+    <th scope="row">#2845</th>
+      <td>ROUPAS LACOSTE</td>
+      <td>LOJA DO POVO</td>
+      <td style="color:green;">CONCLUIDO</td>
+      <td>205.89</td>
+      <td><a style="color:red;" href="#">VER PEDIDO</a></td>
+    </tr>
+    <tr>
+    <th scope="row">#3475</th>
+      <td>TENIS MIZUNO</td>
+      <td>LOJA DO POVO</td>
+      <td style="color:green;">CONCLUIDO</td>
+      <td>305.78</td>
+      <td><a style="color:red;" href="#">VER PEDIDO</a></td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</div>
+
         <script type="text/javascript">
 $(function () {
     //-------------
@@ -156,12 +201,12 @@ $(function () {
     var donutChartCanvas = $('#pieChart').get(0).getContext('2d')
     var donutData        = {
       labels: [
-          'Chrome',
-          'IE',
-          'FireFox',
-          'Safari',
-          'Opera',
-          'Navigator',
+          'Carazinho',
+          'Sarandi',
+          'Erechin',
+          'Ijuí',
+          'Panambi',
+          'Soledade',
       ],
       datasets: [
         {

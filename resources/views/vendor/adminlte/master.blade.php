@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <script src="{{asset('js/jquery.inputmask.min')}}" type="text/javascript"></script>
     {{-- Custom Meta Tags --}}
     @yield('meta_tags')
 

@@ -2,6 +2,12 @@
 
 @section('adminlte_css_pre')
     <link rel="stylesheet" href="{{ asset('vendor/icheck-bootstrap/icheck-bootstrap.min.css') }}">
+    <style>
+        body{
+            /* height: 100% !important; */
+            background: linear-gradient(0deg, white 50%, yellow 50%) !important;
+        }
+    </style>
 @stop
 
 @php( $login_url = View::getSection('login_url') ?? config('adminlte.login_url', 'login') )
